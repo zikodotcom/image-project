@@ -1,0 +1,117 @@
+* {
+     user-select: none;
+   }
+   
+   .container {
+     height: 100vh;
+     width: 70%;
+     position: relative;
+     left: 180px;
+   }
+   
+   .text-section {
+    flex: 2;
+    width: 700px;
+    background-color: #0f874b;
+    padding: 10px;
+    height: 500px;
+    border-radius: 20px 0px 0px 20px;
+   }
+   
+   .text-section img {
+     height: 100%;
+     width: 100%;
+   }
+   
+   .form-section {
+     flex: 1;
+     padding: 20px;
+     background-color: rgb(248, 248, 248); /* Gris clair */
+     height: 500px;
+     border-radius: 0px 20px 20px 0px;
+   }
+   
+   .text {
+     color: white;
+     font-size: 24px;
+     text-align: center;
+   }
+   
+   .text2 {
+     color: white;
+     font-size: 30px;
+     text-align: center;
+   }
+   
+   .text3 {
+     color: white;
+     font-size: 24px;
+     text-align: center;
+   }
+   
+   .form {
+     display: flex;
+     flex-direction: column;
+     height: 100%; /* Ajustement de la hauteur */
+   }
+   
+   .input-group {
+     margin-bottom: 20px;
+   }
+   
+   .input-group input {
+     width: 100%;
+     padding: 10px;
+     border: 1px solid #eaebed; /* Gris clair */
+     border-radius: 20px;
+     outline: none;
+   }
+   
+   input::placeholder {
+     color: gray;
+     padding-left: 10px;
+   }
+   
+   .input-group input:focus {
+     border-color: #0f874b; /* Vert */
+   }
+   
+   .button {
+     padding: 10px;
+     background-color: #0f874b;
+     color: white;
+     border: none;
+     border-radius: 4px;
+     cursor: pointer;
+     transition: 0.3s;
+     border-radius: 20px;
+   }
+   
+   .button:hover {
+     background-color: #0f874b;
+   }
+   
+   /* Media queries pour les écrans mobiles */
+   @media screen and (max-width: 768px) {
+     .container {
+         width: 100%;
+         padding: 0 20px;
+         left: 0;
+     }
+   
+     .text-section {
+         width: 100%;
+         border-radius: 20px 20px 0px 0px;
+     }
+   
+     .form-section {
+         width: 100%;
+         border-radius: 0px 0px 20px 20px;
+     }
+   
+     .text-section img {
+         width: 100%;
+         height: auto;
+     }
+   }
+   
